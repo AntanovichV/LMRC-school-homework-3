@@ -4,31 +4,31 @@
 #include <stdio.h>
 
 
-int lib_isdigit(int s)
+int lib_isprint(int s)
 {
-  if (s >= 48 && s <= 71) return 1;
+  if (s >= 32 && s <= 126) return 1;
 
   return 0;
   
 }
 
-int main()
-{
+int main() {
 
     char s1 = 'y';
-    int s2 = '7';
-    int a = isdigit(s1);
-    int b = lib_isdigit(s1);
-    int c = isdigit(s2);
-    int d = lib_isdigit(s2);
+    char s2 = '+';
+    int a = isprint(s1);
+    int b = lib_isprint(s1);
+    int c = isprint(s2);
+    int d = lib_isprint(s2);
+
     printf("%d", a);
     printf("%d", b);
     printf("%d", c);
     printf("%d", d);
 
-    if (a == b && c != 0 && d == 1)
+    if (a == c && b == d)
     {
-        printf("result");
+        printf("right");
     }
     else
     {

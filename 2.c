@@ -11,8 +11,8 @@ return count;
 }
 
 int main(){
-  char string[]="qwerty";
-  char string2[]="asdfghjkl";
+  const char *string="qwerty";
+  const char *string2="asdfghjkl";
   int a = strlen(string);
   int b = lib_strlen(string);
   int c = strlen(string2);

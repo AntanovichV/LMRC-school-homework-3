@@ -13,10 +13,10 @@ int lib_strcmp( const char *s1, const char *s2 ) {
 }
 
 int main(){
-  char string1[]="qwerty";
-  char string2[]="qwerty";
-  char string3[]="ilovec";
-  char string4[]="ilovec";
+  const char *string1="qwerty";
+  const char *string2="qwerty";
+  const char *string3="ilovec";
+  const char *string4="ilovec";
   int a = strcmp(string1, string2);
   int b = lib_strcmp(string1, string2);
   int c = strcmp(string3, string4);
