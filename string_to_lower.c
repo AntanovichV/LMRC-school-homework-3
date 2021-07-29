@@ -15,8 +15,6 @@ char *string_to_lower(char *s) {
   temp[s_len]='\0';
 
   return temp;
-
-  free(temp);
 }
 int main(){
   char * s1 = "QWERTYUIOP";
