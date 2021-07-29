@@ -15,8 +15,7 @@ char *string_to_upper(char *s) {
   temp[s_len]='\0';
 
   return temp;
-
-  free(temp);
+  
 }
 int main(){
   char * s1 = "qwertyuiop";
